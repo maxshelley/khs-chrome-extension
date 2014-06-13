@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "KHS",
+  "description": "This extension adds content to the KHS site.",
+  "version": "1.0",
+  "content_scripts": [ {
+    "js": [ "jquery-2.1.1.min.js", "background.js" ],
+    "matches": [ "http://www.kesgrave.suffolk.sch.uk/*"]
+  }],
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
