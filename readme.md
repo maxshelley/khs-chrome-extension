@@ -4,7 +4,7 @@ I was invited to speak at my old high school, [Kesgrave High School](http://www.
 
 We played around with web inspector on the school website and then I showed them we could take this further by using [Twilio](http://www.twilio.com) to have their text messages show up on the home page.
 
-This simple Chrome extension does some simple tasks. It checks to see ()[line 8](https://github.com/maxshelley/khs-chrome-extension/blob/master/manifest.json#L8)) if the browser is visiting  `http://www.kesgrave.suffolk.sch.uk/*`, if it is, it waits for you to click on the school logo ([line 13](https://github.com/maxshelley/khs-chrome-extension/blob/master/background.coffee#L13)). When you click, it removes the carousel from the home page and replaces it with an iFrame with a quick [Twilio Rails app](https://github.com/maxshelley/khs-twilio-demo) I built to show the messages [line 23-26](https://github.com/maxshelley/khs-chrome-extension/blob/master/background.coffee#L23).
+This simple Chrome extension does some simple tasks. It checks to see ([line 8](https://github.com/maxshelley/khs-chrome-extension/blob/master/manifest.json#L8)) if the browser is visiting  `http://www.kesgrave.suffolk.sch.uk/*`, if it is, it waits for you to click on the school logo ([line 13](https://github.com/maxshelley/khs-chrome-extension/blob/master/background.coffee#L13)). When you click, it removes the carousel from the home page and replaces it with an iFrame with a quick [Twilio Rails app](https://github.com/maxshelley/khs-twilio-demo) I built to show the messages ([line 23-26](https://github.com/maxshelley/khs-chrome-extension/blob/master/background.coffee#L23)).
 
 It sets a quick loop to refresh the iFrame every 10 seconds.
 
